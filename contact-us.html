@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>kontakt oss</title>
+		<link href=stylesheet.css rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="logo_container">
+					<a class="logo" href="index.html"><img class="logo" src="bilder/ph.png" alt="placeholder"></a>
+				</div>
+				<div class="top_links">
+					<a class="link" href="open-hrs.html">åpningstider</a>
+					<a class="link link_center current-page" href="contact-us.html">kontakt oss</a>
+					<a class="link" href="about-us.html">om oss</a>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<div class="kontakt-tekst element">
+					<h1>Kontakt oss</h1>
+					<p>bruk gjerne kontaktskjema eller send en epost til <a>post@ddd.no</a></p>
+					<p>om det haster kan du også nå oss på telefon <a>99 98 89 99</a></p>
+				</div>
+				<div>
+					<form method="GET" action="results.html" enctype="multipart/form-data">
+						<div class="skjema-kontakt element">
+							<div>
+								<div class="skjema-navn">
+									<label for="name"></label>
+									<input type="text" name="name" id="name" placeholder="Navn" required="">
+								</div>
+								<div class="skjema-epost">
+									<label for="email"></label>
+									<input type="email" name="email" id="email" placeholder="E-postadresse" required="">
+								</div>
+							</div>
+							<div>
+								<div>
+									<label for="number"></label>
+									<input type="tel" name="number" id="number" placeholder="12345678" pattern="[0-9]{8}" required="">
+								</div>
+								<div>
+									<label for="reason"></label>
+									<select id="reason" name="reason" placeholder="Hva gjelder det?">
+										<option>Bordbestilling</option>
+										<option>Takeaway</option>
+										<option>Andre henvendelser</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div>
+							<label for="melding"></label>
+							<textarea id="melding" name="melding" rows="4" colds="100" placeholder="Melding"></textarea>
+						</div>
+						<input type="submit">
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
